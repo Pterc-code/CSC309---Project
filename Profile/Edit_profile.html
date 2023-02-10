@@ -19,7 +19,7 @@
                         <span class="navbar-brand mb-0 h1 ">My Profile</span>
                     </li>
                     <li class="profile-picture ">
-                        <img src="Portrait.jpg " alt="Portrait ">
+                        <img src="Portrait.jpg " id="avatar" alt="Portrait ">
                     </li>
                     <li class="profile-info">
                         <div class="mb-3 row ">
@@ -63,37 +63,39 @@
             </div>
         </nav>
         <div class="content">
-            <div class="container-fluid">
-                <div id="edit-form">
-                    <div class="mb-3 left">
-                        <label for="fname" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="fname" placeholder="Bingchen Yang">
+            <div class="container-fluid" id="edit-form">
+                <div class="mb-3 left Title">
+                    <span class="navbar-brand mb-0 h1 ">My Profile</span>
+                </div>
+                <div class="mb-3 left">
+                    <label for="fname" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="fname" placeholder="Bingchen Yang">
+                </div>
+                <div class="mb-3 left">
+                    <label for="emailAddress" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="bingchen.yang@mail.utoronto.ca">
+                </div>
+                <div class="mb-3 left">
+                    <label for="emailAddress" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="emailAddress" placeholder="123-4567890">
+                </div>
+                <div class="mb-3 left">
+                    <label for="avatar" class="form-label">Change Profile Picture</label>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="avatar">
+                        <label class="input-group-text" for="avatar">Upload</label>
                     </div>
-                    <div class="mb-3 left">
-                        <label for="emailAddress" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="emailAddress" placeholder="bingchen.yang@mail.utoronto.ca">
-                    </div>
-                    <div class="mb-3 left">
-                        <label for="emailAddress" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" id="emailAddress" placeholder="123-4567890">
-                    </div>
-                    <div class="mb-3 left">
-                        <label for="avatar" class="form-label">Change Profile Picture</label>
-                        <div class="input-group mb-3">
-                            <input type="file" class="form-control" id="avatar">
-                            <label class="input-group-text" for="avatar">Upload</label>
-                        </div>
-                    </div>
-                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck1">Clear</label>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck1">Clear</label>
 
-                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btncheck2">Save & Apply</label>
-                    </div>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btncheck2">Save & Apply</label>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-img {
+#avatar {
     width: 140px;
     height: 140px;
     border-radius: 50%;
@@ -38,8 +38,8 @@ li {
     float: right;
     width: 75vw;
     height: 100vh;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .left {
@@ -55,7 +55,16 @@ li {
     margin: auto;
 }
 
+#reservation-list {
+    width: 80%;
+    margin: auto;
+}
+
 .btn-group {
     padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.Title {
     padding-bottom: 5vh;
 }
