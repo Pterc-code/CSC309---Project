@@ -7,3 +7,16 @@ img {
 li {
     padding: 5px;
 }
+
+.form-floating {
+    width: 300px;
+}
+
+#profile-navbar {
+    background-color: #92A8D1;
+    width: 25vw;
+}
+
+.container-fluid {
+    text-align: center;
+}
