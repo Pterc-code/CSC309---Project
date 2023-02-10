@@ -68,3 +68,9 @@ li {
 .Title {
     padding-bottom: 5vh;
 }
+
+.img-fluid {
+    width: 140px;
+    height: 140px;
+    border-radius: 10%;
+}
