@@ -1,0 +1,25 @@
+.format {
+    display: flex;
+    justify-content: left;
+    margin: 1vw;
+    border: black;
+    border-style: solid;
+}
+
+
+.backtoReservations {
+    margin: 10px;
+}
+.reservationImg > img {
+    width: 20vw;
+    height: 20vw;
+}
+
+.reservationImg {
+    margin: 50px;
+}
+
+.reservationName {
+    font-weight: bold;
+    font-size: 1vw;
+}
