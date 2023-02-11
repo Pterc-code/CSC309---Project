@@ -1,0 +1,48 @@
+/* Body */
+body {
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
+/* Housing List */
+
+#houses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#houses > div {
+    margin: 2vw;
+    margin-bottom: 10px;
+}
+
+.houseinfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.houseName {
+    text-align: left;
+    font-weight: bold;
+}
+
+
+#houses > div > img {
+    border-radius: 10px;
+    height: 15vw;
+    width: 15vw;
+}
+
+#houses > img {
+    margin: 2vw;
+
+}
+

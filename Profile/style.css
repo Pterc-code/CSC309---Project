@@ -1,0 +1,84 @@
+#avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+li {
+    padding: 5px;
+}
+
+.form-floating {
+    width: 300px;
+}
+
+#profile-navbar {
+    background-color: #92A8D1;
+    height: 100vh;
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+.navbar {
+    float: left;
+    width: 25vw;
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.content {
+    background-color: oldlace;
+    float: right;
+    width: 75vw;
+    height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.left {
+    text-align: left;
+}
+
+.horizontal-container {
+    display: flex;
+}
+
+#edit-form {
+    width: 40%;
+    margin: auto;
+}
+
+#reservation-list {
+    width: 90%;
+    margin: auto;
+}
+
+.btn-group {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.Title {
+    padding-bottom: 5vh;
+}
+
+.img-fluid {
+    border-radius: 10%;
+}
+
+.property-img-sm {
+    width: 9vw;
+    height: 16vh;
+}
+
+.reservation-date-label {
+    width: 12vw;
+    height: auto;
+}
