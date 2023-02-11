@@ -11,7 +11,101 @@
 </head>
 
 <body>
-
+    <div class="horizontal-container">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid" id="profile-navbar">
+                <ul class="navbar-nav">
+                    <li class=" profile-title ">
+                        <span class="navbar-brand mb-0 h1 ">My Profile</span>
+                    </li>
+                    <li class="profile-picture ">
+                        <img src="Portrait.jpg " id="avatar" alt="Portrait ">
+                    </li>
+                    <li class="profile-info">
+                        <div class="mb-3 row ">
+                            <div class="col-md ">
+                                <div class="form-floating">
+                                    <input type="text " readonly class="form-control " id="staticFname " placeholder="default name " value="Bingchen Yang ">
+                                    <label for="staticFname ">Full name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row ">
+                            <div class="col-md ">
+                                <div class="form-floating">
+                                    <input type="text " readonly class="form-control " id="staticEmail " placeholder="default email " value="bingchen.yang@mail.utoronto.ca ">
+                                    <label for="staticEmail ">Email Address</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row ">
+                            <div class="col-md ">
+                                <div class="form-floating">
+                                    <input type="text " readonly class="form-control " id="staticPhone " placeholder="default phone number " value="123-4567890 ">
+                                    <label for="staticEmail ">Phone Number</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class='profile-btn'>
+                        <a class="btn btn-primary " href="Edit_profile.html " role="button ">Edit Profile</a>
+                    </li>
+                    <li class='profile-btn'>
+                        <a class="btn btn-primary " href="My_reservation.html " role="button ">My reservations</a>
+                    </li>
+                    <li class='profile-btn'>
+                        <a class="btn btn-primary " href="rent_history.html " role="button ">Rent History</a>
+                    </li>
+                    <li class='profile-btn'>
+                        <a class="btn btn-primary " href="my_property.html " role="button ">My property</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="container-fluid" id="reservation-list">
+                <div class="mb-3 left Title">
+                    <span class="navbar-brand mb-0 h1 ">My Property</span>
+                </div>
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Property</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <img src="Bridges.jpg" class="img-fluid property-img-sm" alt="reservation_1">
+                            </td>
+                            <td>Chelan, WA, U.S</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-info">View</button>
+                                <button type="button" class="btn btn-outline-primary">Update</button>
+                                <button type="button" class="btn btn-outline-danger">Remove</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>
+                                <img src="Pumpkin_farm.jpg" class="img-fluid property-img-sm" alt="reservation_2">
+                            </td>
+                            <td>Seattle, WA, U.S</td>
+                            <td>
+                                <button type="button" class="btn btn-outline-info">View</button>
+                                <button type="button" class="btn btn-outline-primary">Update</button>
+                                <button type="button" class="btn btn-outline-danger">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
