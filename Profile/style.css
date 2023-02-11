@@ -70,7 +70,15 @@ li {
 }
 
 .img-fluid {
-    width: 140px;
-    height: 140px;
     border-radius: 10%;
+}
+
+.property-img-sm {
+    width: 9vw;
+    height: 16vh;
+}
+
+.reservation-date-label {
+    width: 12vw;
+    height: auto;
 }
