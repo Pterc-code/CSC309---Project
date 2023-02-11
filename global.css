@@ -1,0 +1,61 @@
+/* This file contains all the styling for any global elements */
+
+footer {
+    display: flex;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    text-align: center;
+
+}
+
+/* Navigation bar */
+
+nav {
+    width: 100vw;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.options {
+    display: flex;
+}
+
+.options > img  {
+    width: 50px;
+    height: 50px;
+
+}
+
+.navbar-brand > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#searchButton {
+    margin-top: 2.7vh;
+    height: 4vh;
+}
+
+.dropdown > button {
+    outline: none;
+    padding: 1vw;
+    border: none;
+    background: none;
+}
+
+.dropdown-item{
+
+}
+
+.dropdown > button > img {
+    height: 25px;
+    width: 25px;
+}

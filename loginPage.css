@@ -1,0 +1,29 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+
+/* Body */
+
+body {
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+/* No have account */
+
+.noHaveAccount {
+    display: flex;
+    justify-content: center;
+}
+
+/* Form */
+
+form {
+    margin-bottom: 1vh;
+}
+
+.mb-3 {
+    width: 20vw;
+}
