@@ -1,0 +1,49 @@
+.reservation {
+    display: flex;
+    margin: 10vh;
+    justify-content: space-evenly;
+    border-bottom: black;
+    border-style: solid;
+    padding: 15px;
+}
+
+.reservationImg > img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10px;
+}
+
+.reservationStartDate {
+    display: flex;
+    font-weight: bold;
+    align-content: center;
+}
+
+.reservationDate {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.reservationEndDate {
+    font-weight: bold;
+}
+
+
+.reservationDetail {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.reservationCancel {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.reservationStatus{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
