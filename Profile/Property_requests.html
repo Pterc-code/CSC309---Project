@@ -18,8 +18,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Requests</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -74,6 +76,7 @@
                 </ul>
             </div>
         </nav>
+
         <div class="content">
 
             <div class="container-fluid center" id="reservation-list">
@@ -234,9 +237,38 @@
                                 </div>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-success">Rate Guest</button>
-                                <button type="button" class="btn btn-primary">View Comment</button>
-                                <button type="button" class="btn btn-info">Contact</button>
+                                <div class="dropdown">
+                                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Rate Guest
+                                    </button>
+                                    <ul class="dropdown-menu center">
+                                        <div class="mx-2 my-1">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">1</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">2</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">3</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">4</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">5</label>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-sm">Confirm</button>
+                                    </ul>
+                                    <button type="button" class="btn btn-primary">View Comment</button>
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
                             </td>
                             <td>
                                 <div class="alert alert-success d-flex align-items-center" role="alert">
@@ -265,9 +297,38 @@
                                 </div>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-success">Rate Guest</button>
-                                <button type="button" class="btn btn-primary">View Comment</button>
-                                <button type="button" class="btn btn-info">Contact</button>
+                                <div class="dropdown">
+                                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" disabled>
+                                      Rate Guest
+                                    </button>
+                                    <ul class="dropdown-menu center">
+                                        <div class="mx-2 my-1">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">1</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">2</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">3</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">4</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">5</label>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-sm">Confirm</button>
+                                    </ul>
+                                    <button type="button" class="btn btn-primary">View Comment</button>
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
                             </td>
                             <td>
                                 <div class="alert alert-danger d-flex align-items-center" role="alert">
@@ -296,9 +357,38 @@
                                 </div>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-success">Rate Guest</button>
-                                <button type="button" class="btn btn-primary">View Comment</button>
-                                <button type="button" class="btn btn-info">Contact</button>
+                                <div class="dropdown">
+                                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" disabled>
+                                      Rate Guest
+                                    </button>
+                                    <ul class="dropdown-menu center">
+                                        <div class="mx-2 my-1">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">1</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">2</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">3</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">4</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                                <label class="form-check-label" for="inlineRadio3">5</label>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary btn-sm">Confirm</button>
+                                    </ul>
+                                    <button type="button" class="btn btn-primary">View Comment</button>
+                                    <button type="button" class="btn btn-info">Contact</button>
+                                </div>
                             </td>
                             <td>
                                 <div class="alert alert-danger d-flex align-items-center" role="alert">
