@@ -1,6 +1,6 @@
 #avatar {
-    width: 140px;
-    height: 140px;
+    max-width: 8vw;
+    max-height: 8vw;
     border-radius: 50%;
 }
 
@@ -14,13 +14,14 @@ li {
 
 #profile-navbar {
     background-color: #92A8D1;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .navbar {
+    position: fixed;
     float: left;
     width: 25vw;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -30,10 +31,12 @@ li {
 }
 
 .content {
+    position: absolute;
+    right: 0;
     background-color: oldlace;
     float: right;
     width: 75vw;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
@@ -79,9 +82,12 @@ li {
     height: 32vh;
 }
 
-.reservation-date-label {
-    width: 12vw;
+.reservation-date-form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 12vw;
     height: auto;
+    padding-bottom: 1vh;
 }
 
 .card {
@@ -89,5 +95,28 @@ li {
 }
 
 .center {
+    margin: auto;
     text-align: center;
+}
+
+.profile-info-form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20vw;
+    max-height: 8vh;
+    padding-bottom: 1vh;
+}
+
+.btn-responsive {
+    max-width: 14vw;
+    max-height: 7vh;
+}
+
+.status {
+    max-width: 10vw;
+    max-height: 6vh;
+}
+
+.font-responsive {
+    font-size: 1vw;
 }

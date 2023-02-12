@@ -27,18 +27,18 @@
 <body>
     <div class="horizontal-container">
         <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid center" id="profile-navbar">
+            <div class="container-fluid center " id="profile-navbar">
                 <ul class="navbar-nav">
-                    <li class=" profile-title ">
+                    <li class=" profile-title">
                         <span class="navbar-brand mb-0 h1 ">My Profile</span>
                     </li>
-                    <li class="profile-picture ">
+                    <li class="profile-picture">
                         <img src="Portrait.jpg " id="avatar" alt="Portrait ">
                     </li>
-                    <li class="profile-info">
+                    <li class="profile-info ">
                         <div class="mb-3 row ">
                             <div class="col-md ">
-                                <div class="form-floating">
+                                <div class="form-floating profile-info-form">
                                     <input type="text " readonly class="form-control " id="staticFname " placeholder="default name " value="Bingchen Yang ">
                                     <label for="staticFname ">Full name</label>
                                 </div>
@@ -46,7 +46,7 @@
                         </div>
                         <div class="mb-3 row ">
                             <div class="col-md ">
-                                <div class="form-floating">
+                                <div class="form-floating profile-info-form">
                                     <input type="text " readonly class="form-control " id="staticEmail " placeholder="default email " value="bingchen.yang@mail.utoronto.ca ">
                                     <label for="staticEmail ">Email Address</label>
                                 </div>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="mb-3 row ">
                             <div class="col-md ">
-                                <div class="form-floating">
+                                <div class="form-floating profile-info-form">
                                     <input type="text " readonly class="form-control " id="staticPhone " placeholder="default phone number " value="123-4567890 ">
                                     <label for="staticEmail ">Phone Number</label>
                                 </div>
@@ -62,16 +62,16 @@
                         </div>
                     </li>
                     <li class='profile-btn'>
-                        <a class="btn btn-primary " href="Edit_profile.html " role="button ">Edit Profile</a>
+                        <a class="btn btn-primary btn-responsive" href="Edit_profile.html " role="button ">Edit Profile</a>
                     </li>
                     <li class='profile-btn'>
-                        <a class="btn btn-primary " href="My_reservation.html " role="button ">My reservations</a>
+                        <a class="btn btn-primary btn-responsive" href="My_reservation.html " role="button ">My reservations</a>
                     </li>
                     <li class='profile-btn'>
-                        <a class="btn btn-primary " href="rent_history.html " role="button ">Rent History</a>
+                        <a class="btn btn-primary btn-responsive" href="rent_history.html " role="button ">Rent History</a>
                     </li>
                     <li class='profile-btn'>
-                        <a class="btn btn-primary " href="my_property.html " role="button ">My property</a>
+                        <a class="btn btn-primary btn-responsive" href="my_property.html " role="button ">My property</a>
                     </li>
                 </ul>
             </div>
@@ -90,8 +90,8 @@
                         <h6 class="card-subtitle mb-2 text-muted">4652 Brooklyn Street, Auburn, WA, U.S, 22735</h6>
                         <img src="Bridges.jpg" class="img-fluid property-img-lg" alt="reservation_1">
                         <p class="card-text"> College Place is a beautiful all ages community on Lea Hill in Auburn. We are conveniently located near Green River CC with easy access to Highway 18 and downtown Auburn.</p>
-                        <a href="#" class="btn btn-primary">View Property</a>
-                        <a href="#" class="btn btn-primary">Update Property</a>
+                        <a href="#" class="btn btn-primary btn-responsive font-responsive">View Property</a>
+                        <a href="#" class="btn btn-primary btn-responsive font-responsive">Update Property</a>
                     </div>
                 </div>
 
@@ -115,11 +115,11 @@
                             <td>
                                 <div class="row g-2">
                                     <div class="col-md">
-                                        <div class="form-floating reservation-date-label">
+                                        <div class="form-floating reservation-date-form">
                                             <input type="text" readonly class="form-control" id="cin-date-1" placeholder="default checkin date" value="March 16th, 2023">
                                             <label for="cin-date-1">Check in Date</label>
                                         </div>
-                                        <div class="form-floating reservation-date-label">
+                                        <div class="form-floating reservation-date-form">
                                             <input type="text" readonly class="form-control" id="cout-date-1" placeholder="default checkout date" value="March 29th, 2023">
                                             <label for="cout-date-1">Check out Date</label>
                                         </div>
@@ -127,78 +127,77 @@
                                 </div>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-primary">Approve</button>
-                                <button type="button" class="btn btn-danger">Deny</button>
-                                <button type="button" class="btn btn-info">Contact</button>
+                                <button type="button" class="btn btn-primary btn-responsive font-responsive">Approve</button>
+                                <button type="button" class="btn btn-danger btn-responsive font-responsive" ">Deny</button>
+                                <button type="button " class="btn btn-info btn-responsive font-responsive "">Contact</button>
                             </td>
                             <td>
-                                <div class="alert alert-primary d-flex align-items-center" role="alert">
-                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-                                    <div>
+                                <div class="alert alert-primary d-flex align-items-center status" role="alert">
+                                    <svg class="bi flex-shrink-0 me-2" width="12" height="12" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                                    <div class="font-responsive" ">
                                         Pending
                                     </div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">2</th>
+                            <th scope="row ">2</th>
                             <td>Reserve</td>
                             <td>Joseph Keen</td>
                             <td>
-                                <div class="row g-2">
-                                    <div class="col-md">
-                                        <div class="form-floating reservation-date-label">
-                                            <input type="text" readonly class="form-control" id="cin-date-1" placeholder="default checkin date" value="March 24th, 2023">
-                                            <label for="cin-date-1">Check in Date</label>
+                                <div class="row g-2 ">
+                                    <div class="col-md ">
+                                        <div class="form-floating reservation-date-form ">
+                                            <input type="text " readonly class="form-control " id="cin-date-1 " placeholder="default checkin date " value="March 24th, 2023 ">
+                                            <label for="cin-date-1 ">Check in Date</label>
                                         </div>
-                                        <div class="form-floating reservation-date-label">
-                                            <input type="text" readonly class="form-control" id="cout-date-1" placeholder="default checkout date" value="March 25th, 2023">
-                                            <label for="cout-date-1">Check out Date</label>
+                                        <div class="form-floating reservation-date-form ">
+                                            <input type="text " readonly class="form-control " id="cout-date-1 " placeholder="default checkout date " value="March 25th, 2023 ">
+                                            <label for="cout-date-1 ">Check out Date</label>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-primary">Approve</button>
-                                <button type="button" class="btn btn-danger">Deny</button>
-                                <button type="button" class="btn btn-info">Contact</button>
+                                <button type="button " class="btn btn-primary btn-responsive font-responsive " ">Approve</button>
+                                        <button type="button " class="btn btn-danger btn-responsive font-responsive " ">Deny</button>
+                                <button type="button " class="btn btn-info btn-responsive font-responsive " ">Contact</button>
                             </td>
                             <td>
-                                <div class="alert alert-primary d-flex align-items-center" role="alert">
-                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-                                    <div>
-                                        Pending
-                                    </div>
+                                <div class="alert alert-primary d-flex align-items-center status " role="alert ">
+                                    <svg class="bi flex-shrink-0 me-2 " width="12 " height="12 " role="img " aria-label="Info: "><use xlink:href="#info-fill "/></svg>
+                                    <div class="font-responsive "> Pending</div>
+                                </div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">3</th>
+                            <th scope="row ">3</th>
                             <td>Cancel</td>
                             <td>Larry Cooper</td>
                             <td>
-                                <div class="row g-2">
-                                    <div class="col-md">
-                                        <div class="form-floating reservation-date-label">
-                                            <input type="text" readonly class="form-control" id="cin-date-1" placeholder="default checkin date" value="Feb 26th, 2023">
-                                            <label for="cin-date-1">Check in Date</label>
+                                <div class="row g-2 ">
+                                    <div class="col-md ">
+                                        <div class="form-floating reservation-date-form ">
+                                            <input type="text " readonly class="form-control " id="cin-date-1 " placeholder="default checkin date " value="Feb 26th, 2023 ">
+                                            <label for="cin-date-1 ">Check in Date</label>
                                         </div>
-                                        <div class="form-floating reservation-date-label">
-                                            <input type="text" readonly class="form-control" id="cout-date-1" placeholder="default checkout date" value="Mar 9th, 2023">
-                                            <label for="cout-date-1">Check out Date</label>
+                                        <div class="form-floating reservation-date-form ">
+                                            <input type="text " readonly class="form-control " id="cout-date-1 " placeholder="default checkout date " value="Mar 9th, 2023 ">
+                                            <label for="cout-date-1 ">Check out Date</label>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-primary" disabled>Approve</button>
-                                <button type="button" class="btn btn-danger" disabled>Deny</button>
-                                <button type="button" class="btn btn-info">Contact</button>
+                                <button type="button " class="btn btn-primary btn-responsive font-responsive " disabled>Approve</button>
+                                <button type="button " class="btn btn-danger btn-responsive font-responsive " disabled>Deny</button>
+                                <button type="button " class="btn btn-info btn-responsive font-responsive ">Contact</button>
                             </td>
                             <td>
-                                <div class="alert alert-primary d-flex align-items-center" role="alert">
-                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-                                    <div>
+                                <div class="alert alert-primary d-flex align-items-center status " role="alert ">
+                                    <svg class="bi flex-shrink-0 me-2 " width="12 " height="12 " role="img " aria-label="Info: "><use xlink:href="#info-fill "/></svg>
+                                    <div class=" font-responsive">
                                         Pending
                                     </div>
                                 </div>
@@ -207,193 +206,193 @@
                     </tbody>
                 </table>
 
-                <table class="table table-success table-striped caption-top">
+                <table class="table table-success table-striped caption-top ">
                     <caption>Past Reservations</caption>
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Guest Name</th>
-                            <th scope="col">Reserved Dates</th>
-                            <th scope="col">Actions</th>
-                            <th scope="col">Status</th>
+                            <th scope="col ">#</th>
+                            <th scope="col ">Guest Name</th>
+                            <th scope="col ">Reserved Dates</th>
+                            <th scope="col ">Actions</th>
+                            <th scope="col ">Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1</th>
+                            <th scope="row ">1</th>
                             <td>Abraham Stacia</td>
                             <td>
-                                <div class="row g-2">
-                                    <div class="col-md">
-                                        <div class="form-floating reservation-date-label">
-                                            <input type="text" readonly class="form-control" id="cin-date-1" placeholder="default checkin date" value="June 12th, 2022">
-                                            <label for="cin-date-1">Check in Date</label>
+                                <div class="row g-2 ">
+                                    <div class="col-md ">
+                                        <div class="form-floating reservation-date-form ">
+                                            <input type="text " readonly class="form-control " id="cin-date-1 " placeholder="default checkin date " value="June 12th, 2022 ">
+                                            <label for="cin-date-1 ">Check in Date</label>
                                         </div>
-                                        <div class="form-floating reservation-date-label">
-                                            <input type="text" readonly class="form-control" id="cout-date-1" placeholder="default checkout date" value="June 17th, 2022">
-                                            <label for="cout-date-1">Check out Date</label>
+                                        <div class="form-floating reservation-date-form ">
+                                            <input type="text " readonly class="form-control " id="cout-date-1 " placeholder="default checkout date " value="June 17th, 2022 ">
+                                            <label for="cout-date-1 ">Check out Date</label>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="dropdown ">
+                                    <button class="btn btn-success dropdown-toggle " type="button " data-bs-toggle="dropdown " aria-expanded="false ">
                                       Rate Guest
                                     </button>
-                                    <ul class="dropdown-menu center">
-                                        <div class="mx-2 my-1">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                <label class="form-check-label" for="inlineRadio1">1</label>
+                                    <ul class="dropdown-menu center ">
+                                        <div class="mx-2 my-1 ">
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio1 " value="option1 ">
+                                                <label class="form-check-label " for="inlineRadio1 ">1</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                <label class="form-check-label" for="inlineRadio2">2</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio2 " value="option2 ">
+                                                <label class="form-check-label " for="inlineRadio2 ">2</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                <label class="form-check-label" for="inlineRadio3">3</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio3 " value="option3 ">
+                                                <label class="form-check-label " for="inlineRadio3 ">3</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                <label class="form-check-label" for="inlineRadio3">4</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio3 " value="option3 ">
+                                                <label class="form-check-label " for="inlineRadio3 ">4</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                <label class="form-check-label" for="inlineRadio3">5</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio3 " value="option3 ">
+                                                <label class="form-check-label " for="inlineRadio3 ">5</label>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn btn-primary btn-sm">Confirm</button>
+                                        <button type="button " class="btn btn-primary btn-sm btn-responsive  font-responsive">Confirm</button>
                                     </ul>
-                                    <button type="button" class="btn btn-primary">View Comment</button>
-                                    <button type="button" class="btn btn-info">Contact</button>
+                                    <button type="button " class="btn btn-primary btn-responsive  font-responsive">View Comment</button>
+                                    <button type="button " class="btn btn-info btn-responsive  font-responsive">Contact</button>
                                 </div>
                             </td>
                             <td>
-                                <div class="alert alert-success d-flex align-items-center" role="alert">
-                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-                                    <div>
+                                <div class="alert alert-success d-flex align-items-center status " role="alert ">
+                                    <svg class="bi flex-shrink-0 me-2 " width="12 " height="12 " role="img " aria-label="Info: "><use xlink:href="#info-fill "/></svg>
+                                    <div class=" font-responsive">
                                         Completed
                                     </div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">2</th>
+                            <th scope="row ">2</th>
                             <td>Everly Lorrin</td>
                             <td>
-                                <div class="row g-2">
-                                    <div class="col-md">
-                                        <div class="form-floating reservation-date-label">
-                                            <input type="text" readonly class="form-control" id="cin-date-1" placeholder="default checkin date" value="Feb 27th, 2022">
-                                            <label for="cin-date-1">Check in Date</label>
+                                <div class="row g-2 ">
+                                    <div class="col-md ">
+                                        <div class="form-floating reservation-date-form ">
+                                            <input type="text " readonly class="form-control " id="cin-date-1 " placeholder="default checkin date " value="Feb 27th, 2022 ">
+                                            <label for="cin-date-1 ">Check in Date</label>
                                         </div>
-                                        <div class="form-floating reservation-date-label">
-                                            <input type="text" readonly class="form-control" id="cout-date-1" placeholder="default checkout date" value="March 11th, 2022">
-                                            <label for="cout-date-1">Check out Date</label>
+                                        <div class="form-floating reservation-date-form ">
+                                            <input type="text " readonly class="form-control " id="cout-date-1 " placeholder="default checkout date " value="March 11th, 2022 ">
+                                            <label for="cout-date-1 ">Check out Date</label>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" disabled>
+                                <div class="dropdown ">
+                                    <button class="btn btn-success dropdown-toggle " type="button " data-bs-toggle="dropdown " aria-expanded="false " disabled>
                                       Rate Guest
                                     </button>
-                                    <ul class="dropdown-menu center">
-                                        <div class="mx-2 my-1">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                <label class="form-check-label" for="inlineRadio1">1</label>
+                                    <ul class="dropdown-menu center ">
+                                        <div class="mx-2 my-1 ">
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio1 " value="option1 ">
+                                                <label class="form-check-label " for="inlineRadio1 ">1</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                <label class="form-check-label" for="inlineRadio2">2</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio2 " value="option2 ">
+                                                <label class="form-check-label " for="inlineRadio2 ">2</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                <label class="form-check-label" for="inlineRadio3">3</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio3 " value="option3 ">
+                                                <label class="form-check-label " for="inlineRadio3 ">3</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                <label class="form-check-label" for="inlineRadio3">4</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio3 " value="option3 ">
+                                                <label class="form-check-label " for="inlineRadio3 ">4</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                <label class="form-check-label" for="inlineRadio3">5</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio3 " value="option3 ">
+                                                <label class="form-check-label " for="inlineRadio3 ">5</label>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn btn-primary btn-sm">Confirm</button>
+                                        <button type="button " class="btn btn-primary btn-sm btn-responsive font-responsive">Confirm</button>
                                     </ul>
-                                    <button type="button" class="btn btn-primary">View Comment</button>
-                                    <button type="button" class="btn btn-info">Contact</button>
+                                    <button type="button " class="btn btn-primary btn-responsive font-responsive">View Comment</button>
+                                    <button type="button " class="btn btn-info btn-responsive font-responsive">Contact</button>
                                 </div>
                             </td>
                             <td>
-                                <div class="alert alert-danger d-flex align-items-center" role="alert">
-                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#exclamation-triangle-fill"/></svg>
-                                    <div>
+                                <div class="alert alert-danger d-flex align-items-center status " role="alert ">
+                                    <svg class="bi flex-shrink-0 me-2 " width="12 " height="12 " role="img " aria-label="Info: "><use xlink:href="#exclamation-triangle-fill "/></svg>
+                                    <div class="font-responsive">
                                         Terminated
                                     </div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">3</th>
+                            <th scope="row ">3</th>
                             <td>Lino Nora</td>
                             <td>
-                                <div class="row g-2">
-                                    <div class="col-md">
-                                        <div class="form-floating reservation-date-label">
-                                            <input type="text" readonly class="form-control" id="cin-date-1" placeholder="default checkin date" value="Dec 14th, 2021">
-                                            <label for="cin-date-1">Check in Date</label>
+                                <div class="row g-2 ">
+                                    <div class="col-md ">
+                                        <div class="form-floating reservation-date-form ">
+                                            <input type="text " readonly class="form-control " id="cin-date-1 " placeholder="default checkin date " value="Dec 14th, 2021 ">
+                                            <label for="cin-date-1 ">Check in Date</label>
                                         </div>
-                                        <div class="form-floating reservation-date-label">
-                                            <input type="text" readonly class="form-control" id="cout-date-1" placeholder="default checkout date" value="Dec 22nd, 2021">
-                                            <label for="cout-date-1">Check out Date</label>
+                                        <div class="form-floating reservation-date-form ">
+                                            <input type="text " readonly class="form-control " id="cout-date-1 " placeholder="default checkout date " value="Dec 22nd, 2021 ">
+                                            <label for="cout-date-1 ">Check out Date</label>
                                         </div>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" disabled>
+                                <div class="dropdown ">
+                                    <button class="btn btn-success dropdown-toggle " type="button " data-bs-toggle="dropdown " aria-expanded="false " disabled>
                                       Rate Guest
                                     </button>
-                                    <ul class="dropdown-menu center">
-                                        <div class="mx-2 my-1">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                <label class="form-check-label" for="inlineRadio1">1</label>
+                                    <ul class="dropdown-menu center ">
+                                        <div class="mx-2 my-1 ">
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio1 " value="option1 ">
+                                                <label class="form-check-label " for="inlineRadio1 ">1</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                <label class="form-check-label" for="inlineRadio2">2</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio2 " value="option2 ">
+                                                <label class="form-check-label " for="inlineRadio2 ">2</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                <label class="form-check-label" for="inlineRadio3">3</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio3 " value="option3 ">
+                                                <label class="form-check-label " for="inlineRadio3 ">3</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                <label class="form-check-label" for="inlineRadio3">4</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio3 " value="option3 ">
+                                                <label class="form-check-label " for="inlineRadio3 ">4</label>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                                <label class="form-check-label" for="inlineRadio3">5</label>
+                                            <div class="form-check form-check-inline ">
+                                                <input class="form-check-input " type="radio " name="inlineRadioOptions " id="inlineRadio3 " value="option3 ">
+                                                <label class="form-check-label " for="inlineRadio3 ">5</label>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn btn-primary btn-sm">Confirm</button>
+                                        <button type="button " class="btn btn-primary btn-sm btn-responsive font-responsive">Confirm</button>
                                     </ul>
-                                    <button type="button" class="btn btn-primary">View Comment</button>
-                                    <button type="button" class="btn btn-info">Contact</button>
+                                    <button type="button " class="btn btn-primary btn-responsive font-responsive ">View Comment</button>
+                                    <button type="button " class="btn btn-info btn-responsive font-responsive ">Contact</button>
                                 </div>
                             </td>
                             <td>
-                                <div class="alert alert-danger d-flex align-items-center" role="alert">
-                                    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#exclamation-triangle-fill"/></svg>
-                                    <div>
+                                <div class="alert alert-danger d-flex align-items-center status " role="alert ">
+                                    <svg class="bi flex-shrink-0 me-2 " width="12 " height="12 " role="img " aria-label="Info: "><use xlink:href="#exclamation-triangle-fill "/></svg>
+                                    <div class=" font-responsive">
                                         Canceled
                                     </div>
                                 </div>
@@ -401,9 +400,9 @@
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
