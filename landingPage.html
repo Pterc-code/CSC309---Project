@@ -21,50 +21,77 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div>
+        <div class="searchOptions">
             <form class="d-flex">
 
                 <div class="form-group">
-                    <label for="searchInput"></label>
-                    <input
-                    type="text"
-                    class="form-control"
-                    id="searchInput"
-                    placeholder="Search"
-                    />
+                    <div>
+                        <label for="searchInput"></label><input
+                        type="text"
+                        class="form-control"
+                        id="searchInput"
+                        placeholder="Search"
+                        />
+                    </div>
+
                 </div>
 
                 <div class="form-group">
-                    <label for="dateIn">Check In:</label>
-                    <input
-                    type="date"
-                    class="form-control"
-                    id="dateIn"
-                    placeholder="fdsa"
-                    />
+                    <div>
+                        <label for="dateIn">Check In:</label>
+                        <input
+                        type="date"
+                        class="form-control"
+                        id="dateIn"
+                        placeholder="fdsa"
+                        />
+                    </div>
+
                 </div>
 
                 <div class="form-group">
-                    <label for="dateOut">Check Out:</label><input
-                    type="date"
-                    class="form-control"
-                    id="dateOut"
-                  />
+                    <div>
+                        <label for="dateOut">Check Out:</label><input
+                        type="date"
+                        class="form-control"
+                        id="dateOut"
+                      />
+                    </div>
+
                 </div>
 
                 <div class="form-group">
+                    <div>
+                        <label for="filterSelect">Order By:</label>
+                        <label for="orderSelect"></label><select class="form-control" id="orderSelect">
+                        <option>Price</option>
+                        <option>Rating</option>
+                        <option>Beds</option>
+                        <option>Guests</option>
+                        </select>
+                    </div>
 
-                    <label for="filterSelect">Filter By:</label>
-                    <select class="form-control" id="filterSelect">
-                    <option>Price</option>
-                    <option>Rating</option>
-                    <option>Option 3</option>
-                    <option>Option 4</option>
-                    <option>Option 5</option>
-                    </select>
                 </div>
 
-                <button type="submit" class="btn btn-secondary" id="searchButton">Search</button>
+                <div class="form-group">
+                    <div>
+                        <label for="filterSelect">Filter By:</label>
+                        <select class="form-control" id="filterSelect">
+                        <option>Pets</option>
+                        <option>Children</option>
+                        <option>Senior</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="searchBar">
+                    <div>
+                        <button type="submit" class="btn btn-secondary" id="searchButton">Search</button>
+                     </div>
+                </div>
+
+
             </form>
 
         </div>
@@ -81,7 +108,7 @@
           </div>
 
           <div class="dropdown">
-              <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="bellButton" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="notificationBell.png" alt="Image">
               </button>
               <ul class="dropdown-menu">
