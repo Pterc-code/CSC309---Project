@@ -17,10 +17,6 @@ li {
     height: 100vh;
 }
 
-.container-fluid {
-    text-align: center;
-}
-
 .navbar {
     float: left;
     width: 25vw;
@@ -78,7 +74,20 @@ li {
     height: 16vh;
 }
 
+.property-img-lg {
+    width: 18vw;
+    height: 32vh;
+}
+
 .reservation-date-label {
     width: 12vw;
     height: auto;
+}
+
+.card {
+    width: 80%;
+}
+
+.center {
+    text-align: center;
 }
