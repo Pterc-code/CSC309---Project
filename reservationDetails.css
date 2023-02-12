@@ -12,9 +12,9 @@
             min-height: 100vh;
         }
 
-        #contentwrap{
-            padding-bottom: 2.5rem; /* footer height changable */
-        }
+        /*#contentwrap{*/
+        /*    padding-bottom: 2.5rem; !* footer height changable *!*/
+        /*}*/
 
         #footer{
             position: absolute;
