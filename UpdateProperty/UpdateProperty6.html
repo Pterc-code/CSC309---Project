@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global.css">
     <!-- Citation: URL of Bootstrap: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Update property</title>
+    <title>Update property Template</title>
     <style>
         #pagecontainer{
             position: relative;
@@ -22,7 +23,7 @@
             width: 100%;
             height: 2.5rem; /* footer height changable */
         }
-        #creation:hover{
+        #update:hover{
             background-color: white;
             color: green;
         }
@@ -34,8 +35,42 @@
 <body>
     <div id="pagecontainer">
         <div id="contentwrap">
-            <header class="bg-info" style="height: 2.5rem;">
-                <!-- implemented later-->
+            <header>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+              
+                      <a class="navbar-brand ps-1" href="../landingPage.html"><img src="../logo.png" alt="website_logo"></a>
+                      <button class="navbar-toggler"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#navbarSupportedContent"
+                              aria-controls="navbarSupportedContent"
+                              aria-expanded="false"
+                              aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+              
+                      <div class="options">
+                          <div class="dropdown">
+                              <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img src="../account.png" alt="Image">
+                              </button>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="../loginPage.html">Log out</a></li>
+                              </ul>
+                          </div>
+                          <div class="dropdown">
+                              <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img src="../notificationBell.png" alt="Image">
+                              </button>
+                              <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                                  <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+                </nav>
             </header>
             <main class="p-5 overflow-hidden">
                 <div class="container">
@@ -50,26 +85,26 @@
                             </div>
                             <div class="row mb-3">
                                 <textarea class="form-control" id="address" row="2"
-                                placeholder="Unit 123, Avant apartment, 50 Gerrard St. E"></textarea>
+                                placeholder="3690 Aviation Way"></textarea>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-4 me-sm-5">
                                     <div class="row mb-1"><label for="city" class="form-label p-0">City:</label></div>
-                                    <div class="row mb-3"><input class="form-control" type="text" id="city" placeholder="Toronto"></div>
+                                    <div class="row mb-3"><input class="form-control" type="text" id="city" placeholder="Detroit"></div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="row mb-1"><label for="province" class="form-label p-0">Province/Territory:</label></div>
-                                    <div class="row mb-3"><input class="form-control" type="text" id="province" placeholder="Ontario"></div>
+                                    <div class="row mb-3"><input class="form-control" type="text" id="province" placeholder="MI"></div>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-sm-4 me-sm-5">
                                     <div class="row mb-1"><label for="postal code" class="form-label p-0">Postal Code:</label></div>
-                                    <div class="row mb-3"><input class="form-control" type="text" id="postal code" placeholder="M5B 1J6"></div>
+                                    <div class="row mb-3"><input class="form-control" type="text" id="postal code" placeholder="90017"></div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="row mb-1"><label for="country" class="form-label p-0">Country:</label></div>
-                                    <div class="row mb-3"><input class="form-control" type="text" id="country" placeholder="Canada"></div>
+                                    <div class="row mb-3"><input class="form-control" type="text" id="country" placeholder="U.S."></div>
                                 </div>
                             </div>
                         </div>
@@ -79,19 +114,19 @@
                         <div class="col-sm-9">
                             <div class="row mb-3">
                                 <div class="col-3 p-0"> <label for="guest" class="form-label">Guests:</label> </div>
-                                <div class="col-2 p-0"><input class="form-control" type="number" id="guest" min="0" placeholder="4"></div>
+                                <div class="col-2 p-0"><input class="form-control" type="number" id="guest" min="0" placeholder="2"></div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-3 p-0"> <label for="bedroom" class="form-label">Bedrooms:</label> </div>
-                                <div class="col-2 p-0"><input class="form-control" type="number" id="bedroom" min="0" placeholder="2"></div>
+                                <div class="col-2 p-0"><input class="form-control" type="number" id="bedroom" min="0" placeholder="1"></div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-3 p-0"> <label for="bed" class="form-label">Beds:</label> </div>
-                                <div class="col-2 p-0"><input class="form-control" type="number" id="bed" min="0" placeholder="3"></div>
+                                <div class="col-2 p-0"><input class="form-control" type="number" id="bed" min="0" placeholder="1"></div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-3 p-0"> <label for="bathroom" class="form-label">Bathrooms:</label> </div>
-                                <div class="col-2 p-0"><input class="form-control" type="number" id="bathroom" min="0" placeholder="2"></div>
+                                <div class="col-2 p-0"><input class="form-control" type="number" id="bathroom" min="0" placeholder="1"></div>
                             </div>
                         </div>
                     </div>
@@ -100,7 +135,7 @@
                         <div class="col-sm-9 gap-sm-5">
                             <div class="row gap-sm-5">
                                 <div class="form-check col-sm-4 mb-1">
-                                    <input class="form-check-input col-3 p-0" type="checkbox" id="WIFI" checked>
+                                    <input class="form-check-input col-3 p-0" type="checkbox" id="WIFI">
                                     <label for="WIFI" class="form-check-label col-9 p-0">WIFI</label>
                                 </div>
                                 <div class="form-check col-sm-4 mb-1">
@@ -111,26 +146,26 @@
                             <div class="row gap-sm-5">
                                 <div class="form-check col-sm-4 mb-1">
                                     <input class="form-check-input col-3 p-0" type="checkbox" id="AC">
-                                    <label for="AC" class="form-check-label col-9 p-0">Air Condition</label>
+                                    <label for="AC" class="form-check-label col-9 p-0">Air Conditioner</label>
                                 </div>
                                 <div class="form-check col-sm-4 mb-1">
-                                    <input class="form-check-input col-3 p-0" type="checkbox" id="kitchen" checked>
+                                    <input class="form-check-input col-3 p-0" type="checkbox" id="kitchen">
                                     <label for="kitchen" class="form-check-label col-9 p-0">kitchen</label>
                                 </div>
                             </div>
                             <div class="row gap-sm-5">
                                 <div class="form-check col-sm-4 mb-1">
-                                    <input class="form-check-input col-3 p-0" type="checkbox" id="fridge" checked>
+                                    <input class="form-check-input col-3 p-0" type="checkbox" id="fridge">
                                     <label for="fridge" class="form-check-label col-9 p-0">Refrigerator</label>
                                 </div>
                                 <div class="form-check col-sm-4 mb-1">
-                                    <input class="form-check-input col-3 p-0" type="checkbox" id="microwave" checked>
+                                    <input class="form-check-input col-3 p-0" type="checkbox" id="microwave">
                                     <label for="microwave" class="form-check-label col-9 p-0">Microwave</label>
                                 </div>
                             </div>
                             <div class="row gap-sm-5">
                                 <div class="form-check col-sm-4 mb-1">
-                                    <input class="form-check-input col-3 p-0" type="checkbox" id="washer">
+                                    <input class="form-check-input col-3 p-0" type="checkbox" id="washer" checked>
                                     <label for="washer" class="form-check-label col-9 p-0">Free washer</label>
                                 </div>
                                 <div class="form-check col-sm-4 mb-1">
@@ -140,32 +175,41 @@
                             </div>
                             <div class="row mb-3 gap-sm-5">
                                 <div class="form-check col-sm-4 mb-1">
-                                    <input class="form-check-input col-3 p-0" type="checkbox" id="smoke" checked>
+                                    <input class="form-check-input col-3 p-0" type="checkbox" id="smoke">
                                     <label for="smoke" class="form-check-label col-9 p-0">Smoke Alarm</label>
                                 </div>
                                 <div class="form-check col-sm-4 mb-1">
-                                    <input class="form-check-input col-3 p-0" type="checkbox" id="CO">
+                                    <input class="form-check-input col-3 p-0" type="checkbox" id="CO" checked>
                                     <label for="CO" class="form-check-label col-9 p-0">Carbon Monoxide Alarm</label>
                                 </div>
                             </div>
                             <div class="row mb-1">
                                 <label for="other amenities" class="form-label p-0">Other Amenities: (please separate amenities using comma(,))</label>
                             </div>
-                            <div class="row mb-3"><input class="form-control" type="text" id="other amenities" placeholder="Closet,bed linen,pillow,portable fan"></div>
+                            <div class="row mb-3"><input class="form-control" type="text" id="other amenities" placeholder=""></div>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3 mb-3 p-0"><h4 class="fw-bold">Step 4: Property Photos</h4></div>
                         <div class="col-sm-9">
-                            <div class="row mb-1"><label for="photo" class="form-label p-0">Upload photos of your property:</label></div>
-                            <div class="row mb-3"><input class="form-control" type="file" id="photo" placeholder="B1.png B2.png" multiple></div>
+                            <div class="row mb-1">Current photos of your property:</div>
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <img src="../Profile/Under_the_bridge.jpg" alt="Current photo" class="h-100 w-25">
+                                </div>
+                                <div class="col-sm-6 d-flex align-items-center">
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                </div>
+                            </div>
+                            <div class="row mb-1"><label for="photo" class="form-label p-0">Upload new photos of your property:</label></div>
+                            <div class="row mb-3"><input class="form-control" type="file" id="photo" placeholder="" multiple></div>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm-3 mb-3 p-0"><h4 class="fw-bold">Step 5: Property Name</h4></div>
                         <div class="col-sm-9">
                             <div class="row mb-1"><label for="name" class="form-label p-0">Give your property a beautiful name:</label></div>
-                            <div class="row mb-3"><input class="form-control" type="text" id="name" placeholder="Newly-Renovated Condo near DT"></div>
+                            <div class="row mb-3"><input class="form-control" type="text" id="name" placeholder="Under the bridge"></div>
                         </div>
                     </div>
                     <div class="row mb-3">
@@ -173,17 +217,53 @@
                         <div class="col-sm-9">
                             <div class="row mb-1"><label for="description" class="form-label p-0">Add description to your property:</label></div>
                             <div class="row mb-3"><textarea class="form-control" type="text" id="description" row="5"
-                            placeholder="Extremely cost-effective condo locates near TMU. 5 minutes walking distance from Eaton Center and College Subway Station. Most daily amenities are equipped and 24/7 sucure guard at the 1st floor. Hope you enjoy your convenient and comfortable life here!"></textarea></div>
+                            placeholder="Romance place where Hank and Corner fell in love with each other."></textarea></div>
                         </div>
                     </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-3 mb-3 p-0"><h4 class="fw-bold">Step 7: Price Setting</h4></div>
+                        <div class="col-sm-9 p-0">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Start Date</th>
+                                        <th scope="col">End Date</th>
+                                        <th scope="col">Price per night</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="date" class="form-control" value="2022-12-01"></td>
+                                        <td><input type="date" class="form-control" value="2023-11-30"></td>
+                                        <td>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                  <span class="input-group-text">$</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Amount" placeholder="250">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td class="d-flex justify-content-center">
+                                            <button type="button" class="btn btn-primary" id="add">Add</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </div>
+                        </table>
+                    </div>
                     <div class="row">
-                        <div class="col-sm-4 offset-3 p-0"><button type="button" class="btn btn-success" id="creation">Save & Update</button></div>
+                        <div class="col-sm-4 offset-3 p-0">
+                            <a href="../Profile/My_property.html" class="btn btn-success" role="button" id="update">Save & Update</a>
+                        </div>
                     </div>
                 </div>
             </main>
         </div>
-        <footer class="bg-dark" id="footer">
-            <!-- implemented later-->
+        <footer id="footer">
+            <p>Copyright 2023 by Restify.</p>
         </footer>
     </div>
     <!-- Citation: URL of Bootstrap: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
