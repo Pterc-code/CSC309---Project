@@ -120,3 +120,8 @@ li {
 .font-responsive {
     font-size: 1vw;
 }
+
+.v-center {
+    margin-top: auto;
+    margin-bottom: auto;
+}
