@@ -47,3 +47,8 @@
     font-weight: bold;
     font-size: 1vw;
 }
+
+.hide  {
+    text-decoration: none;
+    color: gray;
+}
