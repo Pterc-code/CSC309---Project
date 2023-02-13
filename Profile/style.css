@@ -1,6 +1,83 @@
+footer {
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    color: white;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+nav {
+    width: 100vw;
+}
+
+#navbar-top {
+    height: 7vh;
+}
+
+#container-top {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.options {
+    display: flex;
+}
+
+.options>img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-brand>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.d-flex>div {
+    display: flex;
+}
+
+.searchBar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+}
+
+form>div {
+    margin: 4px;
+}
+
+#dropdown-header>button {
+    outline: none;
+    padding: 1vw;
+    border: none;
+    background: none;
+}
+
+.bellButton {
+    margin-right: 85px;
+}
+
+#dropdown-header>button>img {
+    height: 25px;
+    width: 25px;
+}
+
+
+/**/
+
+body {
+    background-color: #92A8D1;
+}
+
 #avatar {
-    max-width: 8vw;
-    max-height: 8vw;
+    max-width: 5vw;
+    max-height: 5vw;
     border-radius: 50%;
 }
 
@@ -14,10 +91,10 @@ li {
 
 #profile-navbar {
     background-color: #92A8D1;
-    height: 100dvh;
+    height: 100vh;
 }
 
-.navbar {
+#navbar-left {
     position: fixed;
     float: left;
     width: 25vw;
@@ -36,9 +113,9 @@ li {
     background-color: oldlace;
     float: right;
     width: 75vw;
-    min-height: 100vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    min-height: 92vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 
 .left {
@@ -46,6 +123,7 @@ li {
 }
 
 .horizontal-container {
+    padding-top: 0vh;
     display: flex;
 }
 
@@ -109,7 +187,7 @@ li {
 
 .btn-responsive {
     max-width: 14vw;
-    max-height: 7vh;
+    max-height: 6vh;
 }
 
 .status {
