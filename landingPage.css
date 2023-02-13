@@ -33,7 +33,7 @@ body {
     font-weight: bold;
 }
 
-#houses>div>img {
+#houses>div>a>img {
     border-radius: 10px;
     height: 15vw;
     width: 15vw;
