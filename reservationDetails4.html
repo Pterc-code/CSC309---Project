@@ -16,6 +16,66 @@
             <a class="navbar-brand" href="landingPage.html"><img src="logo.png" alt="website_logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
 
+            <div class="searchOptions">
+                <form class="d-flex">
+
+                    <div class="form-group">
+                        <div>
+                            <label for="searchInput"></label><input type="text" class="form-control" id="searchInput" placeholder="Search" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="dateIn">Check In:</label>
+                            <input type="date" class="form-control" id="dateIn" placeholder="fdsa" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="dateOut">Check Out:</label><input type="date" class="form-control" id="dateOut" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="filterSelect">Order By:</label>
+                            <label for="orderSelect"></label><select class="form-control" id="orderSelect">
+                        <option>Price</option>
+                        <option>Rating</option>
+                        <option>Beds</option>
+                        <option>Guests</option>
+                        </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="filterSelect">Filter By:</label>
+                            <select class="form-control" id="filterSelect">
+                        <option>Pets</option>
+                        <option>Children</option>
+                        <option>Senior</option>
+                        </select>
+                        </div>
+
+                    </div>
+
+                    <div class="searchBar">
+                        <div>
+                            <button type="submit" class="btn btn-secondary" id="searchButton">Search</button>
+                        </div>
+                    </div>
+
+
+                </form>
+
+            </div>
 
             <div class="options">
                 <div class="dropdown">
@@ -43,7 +103,11 @@
     </nav>
     <div class="backtoReservations">
       <div>
-        <button type="button" class="btn btn-outline-secondary">< Back to my reservations</button>
+        <button type="button" class="btn btn-outline-secondary">
+            <a class="hide" href="Profile\My_reservation.html">
+            < Back to my reservations
+            </a>
+        </button>
       </div>
     </div>
   <div class="format">
