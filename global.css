@@ -94,13 +94,4 @@ form > div{
   background-color: #3e8e41;
 }
 
-@media (max-width: 1200px) {
-    .dropdown-content {
-        display: none;
-        left: 0 !important;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        z-index: 1;
-    }
-}
 
