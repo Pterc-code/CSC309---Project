@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Property 1 Guest</title>
+    <title>View Property User Template</title>
     <link rel="stylesheet" href="../global.css">
     <!-- Citation: URL of Bootstrap: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -28,6 +28,10 @@
             color:white;
         }
         #reserve:hover{
+            background-color: white;
+            color: green;
+        }
+        #reply:hover{
             background-color: white;
             color: green;
         }
@@ -61,8 +65,7 @@
                                   <img src="../account.png" alt="Image">
                               </button>
                               <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="../SignupPage.html">Sign Up</a></li>
-                                  <li><a class="dropdown-item" href="../loginPage.html">Log In</a></li>
+                                  <li><a class="dropdown-item" href="../loginPage.html">Log out</a></li>
                               </ul>
                           </div>
                           <div class="dropdown">
@@ -81,7 +84,7 @@
             <main class="p-5 overflow-hidden">
                 <div class="container">
                     <div class="row mb-3">
-                        <div class="col-sm-6 p-0 fs-2 fw-bold">Lake Chelan Resort</div>
+                        <div class="col-sm-6 p-0 fs-2 fw-bold">College Place Manufactured Home Community</div>
                         <div class="col-sm-6 p-0 fs-2 fw-bold">Star Rating: 5</div>
                     </div>
                     <div class="row mb-3 border border-secondary rounded-3 border-2">
@@ -92,7 +95,7 @@
                             </ol>
                             <div class="carousel-inner d-flex justify-content-center">
                               <div class="carousel-item active" id="image">
-                                <img class="d-block w-100" src="../Profile/Lake_Chelan_resort.jpg" alt="First slide">
+                                <img class="d-block w-100" src="../Profile/Bridges.jpg" alt="First slide">
                               </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -108,13 +111,13 @@
                     <div class="row mb-3 border border-secondary rounded-3 border-2">
                         <div class="col-sm p-5">
                             <div class="row mb-3 text-uppercase fw-bold fs-5">Property Location:</div>
-                            <div class="row mb-3">3624 Poplar Avenue, Chelan, WA, U.S.</div>
+                            <div class="row mb-3">4652 Brooklyn Street, Auburn, WA, U.S.</div>
                             <div class="row mb-3 text-uppercase fw-bold fs-5">Description:</div>
-                            <div class="row">Campbell's Resort has been family owned and operated since 1901. Offering guest rooms, award winning dining, meeting space, located on Lake Chelan - a 55-mile long, glacially fed, crystal clear natural wonder.</div>
+                            <div class="row">College Place is a beautiful all ages community on Lea Hill in Auburn. We are conveniently located near Green River CC with easy access to Highway 18 and downtown Auburn.</div>
                         </div>
                         <div class="col-sm pt-sm-5 ps-5 pe-5">
                             <div class="row mb-3 text-uppercase fw-bold fs-4">Price:</div>
-                            <div class="row mb-3 fs-4">$400 per night</div>
+                            <div class="row mb-3 fs-4">$1,000 per night</div>
                             <div class="row mb-3">
                                 <div class="col-sm-6 p-0"><label for="start date" class="form-label">Start Date:</label></div>
                                 <div class="col-sm-6 p-0"><input type="date" class="form-control" id="start date"></div>
@@ -123,19 +126,13 @@
                                 <div class="col-sm-6 p-0"><label for="end date" class="form-label">End Date:</label></div>
                                 <div class="col-sm-6 p-0"><input type="date" class="form-control" id="end date"></div>
                             </div>
-                            <div class="row mb-3 d-flex justify-content-center">
-                                <a href="../loginPage.html" class="btn btn-warning col-sm-4 fs-5" role="button" id="available">Check Availability</a>
-                            </div>
-                            <div class="row mb-3 d-flex justify-content-center">
-                                <a href="../loginPage.html" class="btn btn-success col-sm-4 fs-5" role="button" id="reserve">Reserve</a>
-                            </div>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-sm pt-5">
                             <div class="row mb-3 fw-bold fs-5">Property Basic Information:</div>
-                            <div class="row mb-1">Maxinum 4 Guests Allowed</div>
-                            <div class="row mb-3">3 Bedrooms 3 Beds 2 Bathrooms</div>
+                            <div class="row mb-1">Maxinum 8 Guests Allowed</div>
+                            <div class="row mb-3">5 Bedrooms 6 Beds 4 Bathrooms</div>
                             <div class="row mb-1 fw-bold fs-5">Host Contact Information:</div>
                             <div class="row mb-1">Email: Enter Email Here</div>
                             <div class="row mb-1">Phone Number: Enter Phone Number Here</div>
@@ -144,10 +141,10 @@
                             <div class="row mb-3 fw-bold fs-5">Amenities Offered:</div>
                             <div class="row">
                                 <div class="col-sm">
-                                    <div class="row md-1">WIFI</div>
+                                    <div class="row md-1">Refrigerator</div>
                                 </div>
                                 <div class="col-sm">
-                                    <div class="row md-1">Fan</div>
+                                    <div class="row md-1">Projector</div>
                                 </div>
                             </div>
                         </div>
@@ -158,26 +155,8 @@
                         <div class="col-sm-3 d-flex align-items-center">Username</div>
                     </div>
                     <div class="row mb-3">Beautiful Place to live in. Highly Suggested</div>
-                    <div class="row mb-3">
-                        <div class="col-sm-1 fw-bold" style="font-size: xx-small; text-align: center;">Host Response:</div>
-                        <div class="col-sm-11">
-                            <div class="row mb-1">
-                                <div class="col-1"><img src="../account.png" alt="Host avatar" class="rounded-circle me-3" style="height: 40px; width:40px"></div>
-                                <div class="col-3 d-flex align-items-center">Hostname</div>
-                            </div>
-                            <div class="row mb-3">Thanks for your review. Welcome to come back here next time.</div>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-sm-1 fw-bold" style="font-size: xx-small; text-align: center;">User Response:</div>
-                        <div class="col-sm-11">
-                            <div class="row mb-1">
-                                <div class="col-1"><img src="../account.png" alt="User avatar" class="rounded-circle me-3" style="height: 40px; width:40px"></div>
-                                <div class="col-3 d-flex align-items-center">Username</div>
-                            </div>
-                            <div class="row mb-3">I'll definitely live here if I come again.</div>
-                        </div>
-                    </div>
+                    <div class="row mb-2"><textarea class="form-control" placeholder="Reply to Comment As a Host"></textarea></div>
+                    <div class="row"><button type="button" class="btn btn-success col-sm-1" id="reply">Reply</button></div>
                 </div>
             </main>
         </div>
