@@ -11,41 +11,96 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+        <div class="container-fluid">
 
-        <a class="navbar-brand" href="landingPage.html"><img src="logo.png" alt="website_logo"></a>
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <a class="navbar-brand" href="landingPage.html"><img src="logo.png" alt="website_logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
 
-        <div class="options">
-            <div class="dropdown">
-                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="account.png" alt="Image">
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="SignupPage.html">Sign Up</a></li>
-                    <li><a class="dropdown-item" href="loginPage.html">Log In</a></li>
-                </ul>
+            <div class="searchOptions">
+                <form class="d-flex">
+
+                    <div class="form-group">
+                        <div>
+                            <label for="searchInput"></label><input type="text" class="form-control" id="searchInput" placeholder="Search" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="dateIn">Check In:</label>
+                            <input type="date" class="form-control" id="dateIn" placeholder="fdsa" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="dateOut">Check Out:</label><input type="date" class="form-control" id="dateOut" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="filterSelect">Order By:</label>
+                            <label for="orderSelect"></label><select class="form-control" id="orderSelect">
+                        <option>Price</option>
+                        <option>Rating</option>
+                        <option>Beds</option>
+                        <option>Guests</option>
+                        </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="filterSelect">Filter By:</label>
+                            <select class="form-control" id="filterSelect">
+                        <option>Pets</option>
+                        <option>Children</option>
+                        <option>Senior</option>
+                        </select>
+                        </div>
+
+                    </div>
+
+                    <div class="searchBar">
+                        <div>
+                            <button type="submit" class="btn btn-secondary" id="searchButton">Search</button>
+                        </div>
+                    </div>
+
+
+                </form>
+
             </div>
-            <div class="dropdown">
-                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="notificationBell.png" alt="Image">
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Notification 1</a></li>
-                    <li><a class="dropdown-item" href="#">Notification 2</a></li>
-                </ul>
+
+            <div class="options">
+                <div class="dropdown">
+                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="account.png" alt="Image">
+                    </button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="SignupPage.html">Sign Up</a>
+                        <a class="dropdown-item" href="loginPage.html">Log In</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="notificationBell.png" alt="Image">
+                    </button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="#">Notification 1</a>
+                        <a class="dropdown-item" href="#">Notification 2</a>
+                    </div>
+                </div>
             </div>
+
         </div>
-      </div>
-  </nav>
+    </nav>
     <div class="backtoReservations">
       <div>
         <button type="button" class="btn btn-outline-secondary">< Back to my reservations</button>
