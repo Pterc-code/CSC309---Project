@@ -35,6 +35,10 @@
             background-color: white;
             color: green;
         }
+        #image{
+            width: 50vw;
+            margin: auto
+        }
     </style>
 </head>
 <body>
@@ -83,24 +87,24 @@
                         <div class="col-sm-6 p-0 fs-2 fw-bold">Enter Property Name Here</div>
                         <div class="col-sm-6 p-0 fs-2 fw-bold">Star Rating: 5</div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row mb-3 border border-secondary rounded-3 border-2">
                         <!-- Citation of Carousel: https://getbootstrap.com/docs/4.1/components/carousel/-->
-                        <div id="carouselExampleIndicators" class="carousel slide p-0" data-ride="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide mx-auto p-0" data-ride="carousel">
                             <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             </ol>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="d-block w-100" src="../Sample.jpg" alt="First slide">
-                              </div>
+                            <div class="carousel-inner d-flex justify-content-center">
+                                <div class="carousel-item active" id="image">
+                                    <img class="d-block w-100" src="../Sample.jpg" alt="First slide">
+                                </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only text-danger">Previous</span>
                             </a>
                             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only text-danger">Next</span>
                             </a>
                         </div>
                     </div>
